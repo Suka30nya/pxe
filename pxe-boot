@@ -1,0 +1,444 @@
+ 1  yum install nfs-utils -y
+    2  naslookup www.google.com
+    3  nslookup www.google.com
+    4  nmtui
+    5  systemctl restart network
+    6  nslookup www.google.com
+    7  yum install nfs-utils -y
+    8  nfs version 3
+    9  nfs version 
+   10  nfs -version 
+   11  nfs -version  --h
+   12  nfs -version  -h
+   13  vi /etc/sysconfig/network-scripts/ifcfg-ens33
+   14  ls
+   15  mkdir /shared
+   16  chmod 777 shared
+   17  chmod 777 /shared
+   18  chmod 777 /shared/
+   19  rpm -qa | grep nfs
+   20  ls
+   21  ls -a
+   22  nfs -v
+   23  nfs -V
+   24  nfsstst -v
+   25  nfsstat -v
+   26  ls -all
+   27  cd /shared
+   28  pwd
+   29  cd
+   30  nfsstat –s
+   31  vim /etc/export
+   32  vim /etc/exports
+   33  ip a
+   34  vim /etc/exports
+   35  systemctl restart rpcbind.service nfs-server.service
+   36  systemctl status firewalld
+   37  systemctl stop firewalld
+   38  systemctl disable firewalld
+   39  systemctl status firewalld
+   40  getenforce
+   41  setenforce 0
+   42  getenforce
+   43  history
+   44  cat /etc/exports
+   45  exportfs -avr
+   46  vim /etc/exports
+   47  export -avr
+   48  exportfs -avr
+   49  cd /shared
+   50  vi test1
+   51  cd /mnt
+   52  ls
+   53  rm -rfv /mnt
+   54  rm -rfv mnt
+   55  cd
+   56  rm -rfv mnt
+   57  cd mnt
+   58  history
+   59  cd shared
+   60  cd /shared
+   61  ls
+   62  mkdir /home1
+   63  cd /home1
+   64  touch p1
+   65  ls
+   66  vim /etc/exports
+   67  export -avr
+   68  exportfs -avr
+   69  init 0
+   70  ping www.googlr.com
+   71  ip a
+   72  exit
+   73  apt update -y
+   74  sudo apt update -y
+   75  ip a
+   76  clear
+   77  ip a
+   78  yum install -y
+   79  ip a
+   80  systemctl status firewalld
+   81  man
+   82  man systemctl
+   83  man bios
+   84  man bois
+   85  ping www.googlr.com
+   86  ping www.google.com
+   87  yum -y install syslinux xinetd tftp-serve
+   88  yum -y install syslinux xinetd tftp-server
+   89   mkdir /var/lib/tftpboot/pxelinux.cfg
+   90  cd /var
+   91  ls
+   92  cd /lib
+   93  ls
+   94  cd /tftpboot
+   95  cd ..
+   96  cd..
+   97  cd
+   98  ls /var/lib/tftpboot/pxelinux.cfg
+   99  cd /var/lib/tftpboot/pxelinux.cfg
+  100  ls
+  101  cd
+  102  cd /usr/share/syslinux/pxelinux.0/var/lib/
+  103  cd /usr/share/syslinux/pxelinux.0
+  104  cp /usr/share/syslinux/pxelinux.0 /var/lib/tftpboot/
+  105  cd /usr
+  106  ls
+  107  cd /share
+  108  cd share
+  109  ls
+  110  cd syslinux/
+  111  ls
+  112  vi pxelinux.0
+  113  pwd
+  114  cd
+  115  vi /etc/xinetd.d/tftp
+  116  systemctl start xinetd
+  117  systemctl enable xinetd
+  118  systemctl status xinetd
+  119   vi /etc/dhcp/dhcpd.conf
+  120  yum -y install dhcp
+  121  vi /etc/dhcp/dhcpd.conf
+  122  hostname
+  123  hostnamectl set-hostname master.demo.lab
+  124  vi /etc/hostname
+  125  vi /etc/dhcp/dhcpd.conf
+  126  vi /etc/hosts
+  127  ip a
+  128  vi /etc/hosts
+  129  vi /etc/dhcp/dhcpd.conf
+  130  systemctl restart NetworkManager
+  131  vi /etc/dhcp/dhcpd.conf
+  132  hostname
+  133  vi /etc/dhcp/dhcpd.conf
+  134  ip a
+  135  vi /etc/dhcp/dhcpd.conf
+  136  systemctl start dhcpd
+  137  systemctl enable  dhcpd
+  138  systemctl restart dhcpd
+  139  systemctl status dhcpd
+  140  systemctl status firewalld
+  141  getenforce
+  142  setenforce 0
+  143  getenforce
+  144  systemctl start firewalld
+  145  systemctl enable firewalld
+  146  systemctl status firewalld
+  147  systemctl stop firewalld
+  148  systemctl status firewalld
+  149  ip a
+  150  hostname
+  151  ls
+  152   mkdir -p /var/pxe/centos7
+  153  mkdir /var/lib/tftpboot/centos7
+  154  mount -t iso9660 -o loop /home/iso/CentOS-7-x86_64-DVD-2009.iso /var/pxe/centos7
+  155  mount -t iso9660 -o loop /home/CentOS-7-x86_64-DVD-2009.iso /var/pxe/centos7
+  156  pwd
+  157  mount -t iso9660 -o loop /root/CentOS-7-x86_64-DVD-2009.iso /var/pxe/centos7
+  158  cp /var/pxe/centos7/images/pxeboot/vmlinuz /var/lib/tftpboot/centos7/
+  159   cp /var/pxe/centos7/images/pxeboot/initrd.img /var/lib/tftpboot/centos7/
+  160  cp /usr/share/syslinux/menu.c32 /var/lib/tftpboot/
+  161  vi /var/lib/tftpboot/pxelinux.cfg/default
+  162  yum -y install httpd
+  163  history
+  164  yum install httpd -y
+  165  dhclinet
+  166  dhclient
+  167  yum install httpd -y
+  168  ip a
+  169  vi /var/lib/tftpboot/pxelinux.cfg/default
+  170  yum install httpd -y
+  171  cat /etc/hosts
+  172  cat /etc/hostname 
+  173  ip a
+  174  yum install httpd 
+  175  ip a
+  176  curl google.com
+  177  ip a
+  178  dhclient -r
+  179  ip a
+  180  ifdown ens36
+  181  ifup ens36
+  182  ip a
+  183  ifdown ens3
+  184  ifup ens33
+  185  ip a
+  186  curl google.com
+  187  dhclient -r ens33
+  188  dhclient -v ens33
+  189  curl google.com
+  190  yum install httpd -y
+  191   rm -f /etc/httpd/conf.d/welcome.conf
+  192  vi /etc/httpd/conf/httpd.conf
+  193  vi /etc/httpd/conf.d/pxeboot.conf
+  194  systemctl start httpd
+  195   systemctl start httpd
+  196  vi /etc/httpd/conf/httpd.conf
+  197   systemctl start httpd
+  198  systemctl start httpd
+  199  journalctl -xe
+  200  systemctl start httpd
+  201  vi /etc/httpd/conf/httpd.conf
+  202  systemctl start httpd
+  203  vi /etc/httpd/conf/pxeboot.conf
+  204  vi /etc/httpd/conf.d/pxeboot.conf
+  205  vi /etc/httpd/conf/httpd.conf
+  206  systemctl start httpd
+  207  systemctl enable httpd
+  208  systemctl restart httpd
+  209  systemctl status httpd
+  210  init 0
+  211  ls
+  212  ls/
+  213  ls /var/lib/tftpboot/pxelinux.cfg
+  214  vi /etc/xinetd.d/tftp
+  215   vi /etc/dhcp/dhcpd.conf
+  216  io a
+  217  ip a
+  218  vi /etc/xinetd.d/tftp
+  219   vi /etc/dhcp/dhcpd.conf
+  220  ls /var/lib/tftpboot/centos7
+  221  ls  /var/lib/tftpboot/
+  222  ls /usr/share/syslinux/
+  223  vi /var/lib/tftpboot/pxelinux.cfg/default
+  224  vi  /etc/httpd/conf/httpd.conf
+  225  vi /etc/httpd/conf.d/pxeboot.conf
+  226  systemctl status firewalld
+  227  systemctl stop firewalld
+  228  systemctl disable firewalld
+  229  getenforce
+  230  setenforce 0
+  231  getenforce
+  232  systemctl restart httpd
+  233  systemctl restart dhcpd
+  234  systemctl restart xinetd
+  235  systemctl status xinetd
+  236  systemctl status dhcpd
+  237  systemctl status httpd
+  238  vi  /etc/httpd/conf/httpd.conf
+  239  systemctl restart httpd
+  240  systemctl restart xinetd
+  241  systemctl restart dhcpd
+  242  ls /var/lib/tftpboot/
+  243  vi /etc/xinetd.d/tftp
+  244  ls /var/lib/tftpboot/
+  245  ls /var/lib/tftpboot/centos7/
+  246  curl httpd://172.10.1.1/entos7
+  247  curl 172.10.1.1/centos7
+  248  curl http://172.10.1.1/centos7
+  249  vi /var/lib/tftpboot/pxelinux.cfg/default
+  250  vi /etc/httpd/conf.d/pxeboot.conf 
+  251  ip a
+  252  ll /var/lib/tftpboot/centos7/
+  253  systemctl restart httpd xinted dhcpd
+  254  systemctl restart httpd xinetd dhcpd
+  255  systemctl status httpd xinetd dhcpd
+  256  vi /etc/httpd/conf.d/pxeboot.conf 
+  257  ls /var/pxe/centos7/
+  258  mount -t iso9660 -o loop /root/CentOS-7-x86_64-DVD-2009.iso /var/pxe/centos7
+  259  ls /var/pxe/centos7/
+  260  vi /etc/httpd/conf.d/pxeboot.conf
+  261  ls /root
+  262  ls /root/anaconda-ks.cfg 
+  263  vi /root/anaconda-ks.cfg 
+  264  pwd
+  265   python -c 'import crypt,getpass; \
+  266  print(crypt.crypt(getpass.getpass(), \
+  267  crypt.mksalt(crypt.METHOD_SHA512)))'
+  268  cd /var/www/html/
+  269  ls
+  270  cd
+  271  cd /var/www/
+  272  ls
+  273  cd
+  274   mkdir /var/www/html/ks
+  275  vi /var/www/html/ks/centos7-ks.cfg
+  276  ls
+  277  vi /var/www/html/ks/centos7-ks.cfg
+  278  chmod 644 /var/www/html/ks/centos7-ks.cfg
+  279   vi /var/lib/tftpboot/pxelinux.cfg/default
+  280  vi /var/www/html/ks/centos7-ks.cfg
+  281  systemctl restart httpd dhcpd xinetd
+  282  vi /var/www/html/ks/centos7-ks.cfg
+  283   vi /var/lib/tftpboot/pxelinux.cfg/default
+  284  ls
+  285   vi /var/lib/tftpboot/pxelinux.cfg/default
+  286  systemctl restart httpd dhcpd xinetd
+  287  ip a
+  288  ll /var/lib/tftpboot/centos7/
+  289  ls /var/pxe/centos7/
+  290   vi /var/lib/tftpboot/pxelinux.cfg/default
+  291  mount
+  292  systemctl status hftp
+  293  systemctl status hftpt
+  294  systemctl status tftp
+  295  systemctl start tftp
+  296  systemctl status t
+  297  systemctl enable tftp
+  298  systemctl status
+  299  systemctl restart httpd dhcpd xinetd
+  300  systemctl status httpd dhcpd xinetd
+  301  systemctl enable httpd dhcpd
+  302  systemctl status httpd dhcpd xinetd
+  303  systemctl restart httpd dhcpd xinetd
+  304   vi /var/lib/tftpboot/pxelinux.cfg/default
+  305  vi /var/www/html/ks/centos7-ks.cfg
+  306  systemctl restart httpd dhcpd xinetd
+  307  ll /var/lib/tftpboot/centos7/
+  308  ls /var/pxe/centos7/
+  309  mount -t iso9660 -o loop /root/CentOS-7-x86_64-DVD-2009.iso /var/pxe/centos7
+  310  ls /var/pxe/centos7/
+  311  ip a
+  312  systemctl restart httpd dhcpd xinetd
+  313  cd /ks
+  314  cd  /var/www/html/ks
+  315  ls
+  316   vi /var/lib/tftpboot/pxelinux.cfg/default
+  317  pwd
+  318  cd ..
+  319  pwd
+  320   vi /var/lib/tftpboot/pxelinux.cfg/default
+  321  systemctl restart httpd dhcpd xinetd
+  322   vi /var/lib/tftpboot/pxelinux.cfg/default
+  323  systemctl status firewalld
+  324  getenforce
+  325  systemctl restart httpd dhcpd xinetd
+  326  vi /var/www/html/ks/centos7-ks.cfg
+  327  systemctl restart httpd dhcpd xinetd
+  328  vi /var/www/html/ks/centos7-ks.cfg
+  329  ls /var/pxe/centos7/
+  330  chmod 644 /var/www/html/ks/centos7-ks.cfg
+  331  vi /var/www/html/ks/centos7-ks.cfg
+  332  systemctl restart httpd dhcpd xinetd
+  333  systemctl status httpd dhcpd xinetd
+  334   vi /var/lib/tftpboot/pxelinux.cfg/default
+  335  curl http://172.10.1.1/ks/centos7-ks.cfg
+  336  tail /var/log/httpd
+  337  tail /var/log/httpd/error_log 
+  338  setenforce 0
+  339  getenforce
+  340  systemctl disable firewalld
+  341  systemctl status firewalld
+  342  tail /var/log/httpd/error_log 
+  343  tail /var/log/httpd/access_log 
+  344  curl http://172.10.1.1/ks/centos7-ks.cfg/LiveOS/squashfs.img
+  345  var/www/html/ks
+  346  ll var/www/html/ks
+  347  ll /var/www/html/ks
+  348  vi /var/www/html/ks/centos7-ks.cfg 
+  349  vi /etc/httpd/conf.d/pxeboot.conf 
+  350  ll /var/pxe/centos7
+  351  sestatus
+  352  systemctl restart httpd dhcpd xinetd
+  353  vi /var/www/html/ks/centos7-ks.cfg 
+  354  ll /var/pxe/centos7
+  355  vi /etc/httpd/conf.d/pxeboot.conf 
+  356  ip a
+  357  systemctl status tftp
+  358  systemctl start tftp
+  359  systemctl enable  tftp
+  360  systemctl status tftp
+  361  vi /etc/httpd/conf.d/pxeboot.conf 
+  362  vi /var/www/html/ks/centos7-ks.cfg 
+  363  history
+  364  vi /etc/xinetd.d/tftp
+  365    332   vi /var/lib/tftpboot/pxelinux.cfg/default
+  366  vi /var/lib/tftpboot/pxelinux.cfg/default
+  367  systemctl restart httpd dhcpd xinetd
+  368  vi /var/www/html/ks/centos7-ks.cfg 
+  369  ip a
+  370  systemctl restart httpd dhcpd xinetd
+  371  vi /var/www/html/ks/centos7-ks.cfg 
+  372  vi /var/lib/tftpboot/pxelinux.cfg/default
+  373  systemctl restart httpd dhcpd xinetd
+  374  vi /var/lib/tftpboot/pxelinux.cfg/default
+  375  yum grouplist
+  376  vi /var/lib/tftpboot/centos7/root/etc/shadow
+  377  cat etc/passwd
+  378  cat /etc/passwd
+  379  cd
+  380  yum -y install dracut-network nfs-utils
+  381  ip a
+  382  yum -y install dracut-network nfs-utils
+  383  dhclient ens33
+  384  dhclient ens33 -v
+  385  kill 9627
+  386  dhclient ens33 -v
+  387  yum -y install dracut-network nfs-utils
+  388  kill -9 9594
+  389  yum -y install dracut-network nfs-utils
+  390  ip a
+  391  dhclient -r ens33
+  392  dhclient -v ens33
+  393  curl google.com
+  394  ping www.google.com
+  395  curl google.com
+  396  yum -y install dracut-network nfs-utils
+  397  kill -9 9665
+  398  yum -y install dracut-network nfs-utils
+  399   mkdir -p /var/lib/tftpboot/centos7/root
+  400  yum grouplist
+  401  Minimal Install
+  402   yum groups -y install "Minimal Install" --releasever=7 --installroot=/var/lib/tftpboot/centos7/root/
+  403   python -c 'import crypt,getpass; \
+  404  print(crypt.crypt(getpass.getpass(), \
+  405  crypt.mksalt(crypt.METHOD_SHA512)))'
+  406   python -c 'import crypt,getpass; \
+  407  print(crypt.crypt(getpass.getpass(), \
+  408  crypt.mksalt(crypt.METHOD_SHA512)))'
+  409  vi /var/lib/tftpboot/centos7/root/etc/shadow
+  410  vi /var/lib/tftpboot/centos7/root/etc/fstab
+  411   wget -P /var/lib/tftpboot/centos7/ http://mirror.centos.org/centos/7/os/x86_64/images/pxeboot/vmlinuz http://mirror.centos.org/centos/7/os/x86_64/images/pxeboot/initrd.img
+  412   vi /etc/exports
+  413  cat /etc/exports
+  414   vi /etc/exports
+  415  cat /etc/exports
+  416  systemctl start rpcbind nfs-serve
+  417  systemctl restart rcpbind.service nfs-server.service
+  418  systemctl start rcpbind.service nfs-server.service
+  419  history
+  420   systemctl restart rpcbind.service nfs-server.service
+  421   systemctl status rpcbind.service nfs-server.service
+  422  history
+  423  systemctl start rpcbind nfs-serve
+  424  systemctl start rpcbind nfs-server
+  425  systemctl enable rpcbind nfs-server
+  426  systemctl stop dhcpd
+  427  ip a
+  428  systemctl start dhcpd
+  429  ip a
+  430  yum grouplist
+  431   yum groups -y install "GNOME Desktop" --releasever=7 --installroot=/var/lib/tftpboot/centos7/root/
+  432   yum groups -y install "Server with GUI" --releasever=7 --installroot=/var/lib/tftpboot/centos7/root/
+  433  dhclient -r ens33
+  434  dhclient -v ens33
+  435  ip a
+  436   yum groups -y install "Server with GUI" --releasever=7 --installroot=/var/lib/tftpboot/centos7/root/
+  437  kill -9 11811
+  438   yum groups -y install "Server with GUI" --releasever=7 --installroot=/var/lib/tftpboot/centos7/root/
+  439  man yum groups -y install "Server with GUI" --releasever=7 --installroot=/var/lib/tftpboot/centos7/root/
+  440  man yum
+  441  vi /etc/dhcpd/dhcpd.conf
+  442  vi /etc/dhcp/dhcpd.conf
+  443  init 0
+  444  history
